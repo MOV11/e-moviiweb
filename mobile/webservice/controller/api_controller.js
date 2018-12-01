@@ -168,6 +168,18 @@ module.exports = function (app) {
             });
     });
 
+    app.get('/api/viagem/:id/modal/', function req_handle(req, res, next) {
+        viagem_model
+            .buscar_por_id_join_modal(req.params.id)
+            .then(results => {
+        
+                res.status(200).send(results);
+            })
+            .catch(err => {
+                res.status(500).send(err);
+            });
+    });
+
     app.post('/api/viagem/', function req_handle(req, res, next) {
         viagem_model
             .inserir(req.body)
