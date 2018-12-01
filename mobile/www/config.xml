@@ -21,8 +21,9 @@
         <uses-permission name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     </config-file>
     <platform name="android">
-        <preference name="android-minSdkVersion" value="14" />
+        <preference name="android-minSdkVersion" value="19" />
         <allow-intent href="market:*" />
+        <preference name="PLAY_SERVICES_VERSION" value="19" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -30,15 +31,16 @@
         <preference name="BackupWebStorage" value="none" />
     </platform>
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="phonegap-version" value="cli-8.0.0" />
-    <engine name="android" spec="^7.1.4" />
-    <engine name="browser" spec="^5.0.4" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <plugin name="cordova-plugin-geolocation" spec="2.1.0" />
-    <plugin name="cordova-plugin-googlemaps" spec="2.4.6">
+    <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+
+    <engine name="android" spec="^7.1.4" />
+     <plugin name="cordova-plugin-googlemaps" spec="2.4.6">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc" />
     </plugin>
+    <preference name="phonegap-version" value="cli-8.0.0" />
+
 </widget>

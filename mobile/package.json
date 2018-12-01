@@ -4,10 +4,27 @@
   "displayName": "moviii",
   "cordova": {
     "platforms": [
-      "android"
-    ]
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc",
+        "API_KEY_FOR_IOS": "AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc"
+      }
+    }
   },
   "dependencies": {
-    "cordova-android": "~7.1.4"
+    "cordova-android": "^7.1.4",
+    "cordova-browser": "^5.0.4",
+    "cordova-plugin-console": "~1.0.1",
+    "cordova-plugin-googlemaps": "2.4.6",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-plugin-whitelist": "~1.2.0",
+    "cordova-plugin-geolocation": "2.1.0"
   }
 }
