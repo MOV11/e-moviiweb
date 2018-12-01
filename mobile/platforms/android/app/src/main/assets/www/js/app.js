@@ -4,24 +4,24 @@ var app = new Framework7({
   // App root element
   root: '#app',
   // App Name
-  name: 'e-Movii',
+  name: 'ecoticket',
   // App id
-  id: 'com.phonegap.emovii',
+  id: 'com.phonegap.ecoticket',
 
   touch: {
     disableContextMenu: false,
   },
   dialog: {
-    // change default "OK" button text
+
     buttonOk: 'OK',
     buttonCancel: 'Cancelar',
   },
-  // Enable swipe panel
+
   panel: {
     swipe: 'left',
   },
   pushState: true,
-  // Add default routes
+
   routes: rotas,
 
   methods: {

@@ -29,13 +29,11 @@
             <div data-name="home" class="page">
 
                 <!-- Additional "tabbar-labels" class -->
-                <div class="toolbar tabbar-labels">
+                <!-- <div class="toolbar tabbar-labels">
                         <div class="toolbar-inner">
                         <a href="#tab-1" class="tab-link">
-                            <!-- Different icons for iOS and MD themes -->
                             <i class="icon f7-icons ios-only">bars_chart</i>
                             <i class="icon material-icons md-only">bars_chart</i>
-                            <!-- Label text -->
                             <span class="tabbar-label">graficos</span>
                         </a>
                         <a href="#tab-2" class="tab-link">
@@ -49,24 +47,53 @@
                             <span class="tabbar-label">perfil</span>
                         </a>
                         </div>
-                </div>
+                </div> -->
 
 
                 <!-- Scrollable page content -->
-                <div class="page-content login-screen-content font_azul_elleven">
+                <div class="page-content iniciar-content font_azul_elleven" style="overflow-x: hidden;"> 
 
-                    <div class="block center-row">
-                        <p class="row">
-                          <a href="/movimento/" > <button class="col center button botao_start button-big">START</button> </a>
-                        </p>
+                    <div class="card nome_label">
+                        <div class="card-content card-content-padding"> <img class="user_topo" src="./img/user.png" alt="">  <span style="vertical-align: text-bottom;
+                            padding-left: 10px;" >Leticia P.</span></div>
+                    </div>                    
+                    
+                    <div class="pontuacao">
+                        <img class="medalha" src="./img/logo-collapse.png" alt="">
+                        <span style="vertical-align: text-bottom;
+                            padding-left: 10px;" >34215</span>
+                    </div>
+     
+                    <div class="card acumulado">
+                        <div class="card-content card-content-padding" style="display: flex;">
+                        <div style="width:50%;color:#B1C8C2; border-right: 1px solid #B1C8C2 !important;" >
+                            <img src="./img/trophy.svg" alt="" height="50px"> 
+                            <span style="vertical-align:super;font-size:52px;padding-left: 10px;" >1°</span>
+                        </div>
+                        <div style="color:#B1C8C2;margin-left: 10px;">
+                            <span style="font-size:42px;">90888998</span><br><span style="font-size:12px;padding-bottom: 5px;">Acumulado</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card iniciar">
+                        <div class="card-header"> 
+                            <a class="tp_modal" ><img height="60px;" src="./img/bus.png" alt=""></a>
+                            <a class="tp_modal" ><img height="60px;" src="./img/bicycle.png" alt=""></a>
+                            <a class="tp_modal" ><img height="60px;" src="./img/shoe.png" alt=""></a>
+                        </div>
+                        <div class="card-content card-content-padding">
+                            <a href="/movimento/" > <button class="col center button botao_start button-big">INICIAR</button> </a>           
+                        </div>
                     </div>
                     
                     
-                    <div class="tabs">
+                    
+                    <!-- <div class="tabs">
                         <div id="tab-1" class="page-content tab tab-active"> 1 </div>
                         <div id="tab-2" class="page-content tab"> 2 </div>
                         <div id="tab-3" class="page-content tab"> 3 </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

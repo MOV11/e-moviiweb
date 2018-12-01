@@ -24,11 +24,12 @@ rotas = [
                     });
                     
                     var div = document.getElementById("map_canvas");
-                    // Create a Google Maps native view under the map_canvas div.
+
                     var map = plugin.google.maps.Map.getMap(div);
 
                     var lat_ant = null;
                     var lon_ant = null;
+                    var total = 0;
 
                     function calcCrow(lat1, lon1, lat2, lon2){
 
@@ -65,10 +66,8 @@ rotas = [
                         console.log(`${position.coords.latitude} == ${position.coords.longitude} || ${lat_ant} == ${lon_ant}`);
                         var distancia = calcCrow(position.coords.latitude, position.coords.longitude, lat_ant, lon_ant);
 
-                        console.log(distancia);
+                        $$('#tempo').html( (distancio * 0.02).toFixed(3) );
 
-                        lat_ant = position.coords.latitude;
-                        lon_ant = position.coords.longitude;
                     }
 
                     function watch_error(error) {
@@ -88,7 +87,7 @@ rotas = [
                                 bearing: 140,
                                 duration: 3000
                             }, function() {
-                                //alert("Camera target has been changed");
+                                console.log("Ocorreu uma exceção na animação da camera");
                             });
                         }
                             
@@ -112,7 +111,14 @@ rotas = [
                                                     pos.coords.latitude,
                                                     pos.coords.longitude
                                                 ));
+                        
+                    function parar() {
+                        navigator.geolocation.clearWatch(watchID);
+                        page.router.back();
                     }
+
+                    $$('.botao_parar').click(parar);
+                }
                 
             }
         }

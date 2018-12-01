@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "ecoticket",
+  "short_name": "ecoticket",
+  "version": "com.phonegap.ecoticket",
+  "description": "Plataforma que busca fomentar o desuso de veículos automovéis individuais, e o uso dos transportes publicos e modais ativos.",
+  "author": "movii",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}
