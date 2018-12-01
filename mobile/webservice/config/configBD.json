@@ -1,0 +1,8 @@
+{
+    "BD": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "ecoticket"
+    }
+}
