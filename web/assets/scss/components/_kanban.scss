@@ -1,0 +1,23 @@
+// main: ../style.scss
+/********************************
+ *********************************
+Kanban
+ *********************************
+ *********************************/
+
+/* Kanban Widget 
+========================*/
+.kanban-widget {
+  overflow-x: scroll;
+
+  .category-list {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100%;
+  }
+
+  .category-item {
+    flex-basis: 700px;
+    height: 300px;
+  }
+}
