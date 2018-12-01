@@ -66,7 +66,7 @@ rotas = [
                         console.log(`${position.coords.latitude} == ${position.coords.longitude} || ${lat_ant} == ${lon_ant}`);
                         var distancia = calcCrow(position.coords.latitude, position.coords.longitude, lat_ant, lon_ant);
 
-                        $$('#tempo').html( (distancio * 0.02).toFixed(3) );
+                        $$('#tempo').html( (distancia * 0.02).toFixed(3) );
 
                     }
 
