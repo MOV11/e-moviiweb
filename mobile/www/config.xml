@@ -38,8 +38,8 @@
 
     <engine name="android" spec="^7.1.4" />
      <plugin name="cordova-plugin-googlemaps" spec="2.4.6">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc" />
+        <variable name="API_KEY_FOR_ANDROID" value="" />
+        <variable name="API_KEY_FOR_IOS" value="" />
     </plugin>
     <preference name="phonegap-version" value="cli-8.0.0" />
 

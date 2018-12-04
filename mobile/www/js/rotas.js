@@ -19,7 +19,7 @@ rotas = [
                     var pontos = [];
 
                     plugin.google.maps.environment.setEnv({
-                        'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc',
+                        'API_KEY_FOR_BROWSER_RELEASE': '',
                         'API_KEY_FOR_BROWSER_DEBUG': ''
                     });
                     

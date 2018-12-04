@@ -38,7 +38,7 @@
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <plugin name="cordova-plugin-geolocation" spec="2.1.0" />
     <plugin name="cordova-plugin-googlemaps" spec="2.4.6">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyA3WECrzdOEqFDthJAti_ytD9BnPBIMZXc" />
+        <variable name="API_KEY_FOR_ANDROID" value="" />
+        <variable name="API_KEY_FOR_IOS" value="" />
     </plugin>
 </widget>
